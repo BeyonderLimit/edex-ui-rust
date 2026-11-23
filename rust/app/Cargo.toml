@@ -1,0 +1,22 @@
+[package]
+name = "edex-ui"
+version = "2.2.8"
+edition = "2021"
+description = "eDEX-UI Rust/Tauri port"
+authors = ["eDEX-UI contributors"]
+license = "GPL-3.0"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-single-instance = "2"
+edex-config = { path = "../core" }
+edex-pty = { path = "../pty" }
+edex-sysinfo = { path = "../sysinfo" }
+serde_json = "1"
+which = "8"
+
+[dev-dependencies]
+tempfile = "3"
